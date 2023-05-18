@@ -1,0 +1,1381 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width:912px) {
+
+    .canvas {
+        background-color: rgb(16, 16, 82);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .second-canvas {
+        background-color: rgb(16, 16, 82);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 100vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+
+    .second-container {
+        width: 50vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(197, 197, 197);
+        cursor: pointer;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+
+    .second-btn {
+        position: absolute;
+        top: 150%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(179, 179, 179);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 2s ease;
+    }
+
+
+
+    .second-flex-container {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 2s ease;
+    }
+
+    .left-btn {
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+        left: 20px;
+    }
+
+    .second-left-btn {
+        font-weight: bolder;
+        color: rgb(250, 248, 248);
+        font-size: 2em;
+        left: 20px;
+    }
+
+    .second-right-btn {
+        font-weight: bolder;
+        color: whitesmoke;
+        font-size: 2em;
+        right: 20px;
+    }
+
+    .right-btn {
+        color: whitesmoke;
+        font-size: 2em;
+        right: 20px;
+    }
+
+
+    .div-img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+
+    }
+
+    .second-div-img {
+        display: flex;
+        padding: 0px 10px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        transform: rotate3d(1, 1, 1, 20deg);
+        box-shadow: 2px 2px 20px 2px;
+    }
+
+    .lux {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lux-pera {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2em;
+        color: gray;
+    }
+
+    #Navbar-item {
+        top: 10px;
+        left: -5px;
+        position: absolute;
+        color: red;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Navbar {
+        left: 500px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+    ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 15px;
+        color: rgb(58, 57, 57);
+        padding: 0px 20px;
+    }
+
+    ul li a:hover {
+        background-color: white;
+        color: black;
+        padding: 2px 2px;
+        border-radius: 10px;
+    }
+
+    #Travling-logo-navbar {
+        border-radius: 50%;
+        width: 25%;
+        box-shadow: 2px 2px 20px 2px rgb(146, 134, 30);
+    }
+
+    #Vayages-Block-Tittle {
+        font-style: italic;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: -250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+
+    #Body-portion {
+        background-color: rgb(231, 231, 231);
+    }
+
+    #Dummy-text-Block {
+        text-align: center;
+        padding: 3em 12em;
+        background-color: black;
+        color: white;
+    }
+
+
+    #Dummy-text-heading-Block {
+        font-style: italic;
+        font-size: 2.5rem;
+        padding: 1em 1em;
+    }
+
+    #Dummy-heading-peragraph-Block {
+        color: rgb(230, 227, 227);
+        font-size: 1.2rem;
+        text-align: justify;
+        font-family: monospace;
+        word-spacing: 2px;
+    }
+
+    #Dummy-text-div {
+        text-align: center;
+        padding: 5em 12em;
+    }
+
+    #Dummytext-heading {
+        padding: 1em 1em;
+        font-style: italic;
+        font-size: 2.5rem;
+    }
+
+    #Dummy-heading-peragraph {
+        color: gray;
+        font-size: 1.2rem;
+        text-align: justify;
+        font-family: monospace;
+    }
+
+
+    #image-section {
+        padding: 0.5em 0.3em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1.5fr);
+    }
+
+
+    .image-section {
+        width: 95%;
+        box-shadow: 2px 2px 20px 2px rgb(17, 17, 17);
+    }
+
+    .image-section:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    .Image-Title {
+        position: relative;
+        top: -3.1em;
+        color: white;
+        width: 90%;
+        opacity: 1;
+    }
+
+    .Image-Title:hover {
+        background-color: black;
+        opacity: 0.3;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    #Above-footer-block {
+        padding: 4em 6em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: black;
+        width: 100%;
+        margin-top: 2em;
+        color: white;
+    }
+
+
+    #Above-footer-block-image {
+        text-align: center;
+    }
+
+    #woorking-person-image {
+        border-radius: 50%;
+        width: 35%;
+        box-shadow: 2px 2px 20px 2px whitesmoke;
+    }
+
+    #Above-footer-block-peragraph {
+        display: inline;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
+    #Below-footer-block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem 5em;
+        background-color: rgb(41, 41, 41);
+        color: whitesmoke;
+        padding: 5em 0em;
+    }
+
+
+    #Social-Details {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        grid-row-gap: 2em;
+        text-align: center;
+    }
+
+    #Travling-logo {
+        border-radius: 50%;
+        width: 50%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1.6em;
+        color: whitesmoke;
+    }
+
+    .Footer-Heading-Color {
+        color: rgba(211, 31, 31, 0.877);
+        font-weight: bold;
+    }
+
+    i {
+        color: white;
+        box-shadow: 2px 2px 10px 2px red;
+    }
+
+    .fa-facebook-square:hover {
+        background-color: rgb(33, 112, 165);
+        transform: scale(1.2);
+    }
+
+    .fa-instagram:hover {
+        background-color: rgb(206, 209, 27);
+        border-radius: 50%;
+        transform: scale(1.2);
+    }
+
+    .fa-twitter-square:hover {
+        background-color: rgb(70, 182, 48);
+        transform: scale(1.2);
+    }
+
+    li {
+        padding: 0.3em 0em;
+        list-style: none;
+        color: white;
+    }
+
+    #Copy-Right {
+        color: white;
+        text-align: center;
+    }
+
+
+    button {
+        margin: 2em 0em;
+        padding: 1em 2em;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 2px yellow;
+    }
+
+    button:hover {
+        background-color: rgb(218, 23, 23);
+    }
+
+    .lux {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        margin: 20px 50px;
+    }
+
+    .conv {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cont {
+        background-color: aquamarine;
+        width: 50vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+
+    .bt {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(34, 34, 34);
+        cursor: pointer;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+
+    .flex-cont {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 1s ease;
+    }
+
+    .leftbtn {
+
+        color: rgb(247, 242, 242);
+        font-size: 2em;
+        left: 20px;
+    }
+
+    .rightbtn {
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+        right: 20px;
+    }
+
+    .divimg {
+
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+
+    .canvas {
+        background-color: rgb(16, 16, 82);
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .second-canvas {
+        width: 100%;
+        background-color: rgb(16, 16, 82);
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .container {
+        width: 100vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+    .second-container {
+        width: 100vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+
+    .btn {
+        position: absolute;
+        top: 30%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(197, 197, 197);
+        cursor: pointer;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+
+    .second-btn {
+        position: absolute;
+        top: 550px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(179, 179, 179);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 2s ease;
+    }
+   
+
+
+
+    .second-flex-container {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 2s ease;
+    }
+
+    .left-btn {
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+        left: 10px;
+    }
+
+    .second-left-btn {
+        font-weight: bolder;
+        color: rgb(250, 248, 248);
+        font-size: 2em;
+        left: 5px;
+    }
+
+    .second-right-btn {
+        font-weight: bolder;
+        color: whitesmoke;
+        font-size: 2em;
+        right: -60px;
+    }
+
+    .right-btn {
+        color: whitesmoke;
+        font-size: 2em;
+        right: 20px;
+    }
+
+
+    .div-img{
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .second-div-img {
+        display: flex;
+        padding: 0px 10px;
+        width: 79%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        transform: rotate3d(1, 1, 1, 20deg);
+        box-shadow: 2px 2px 20px 2px;
+    }
+
+    .lux {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lux-pera {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2em;
+        color: gray;
+    }
+
+    #Navbar-item {
+        top: 10px;
+        position: absolute;
+        display: flex;
+    }
+
+    .Navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+
+    ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 15px;
+        color: rgb(58, 57, 57);
+        padding: 0px 10px;
+    }
+
+    ul li a:hover {
+        background-color: white;
+        color: black;
+        padding: 2px 2px;
+        border-radius: 10px;
+    }
+
+    #Travling-logo-navbar {
+        border-radius: 50%;
+        width: 25%;
+        box-shadow: 2px 2px 20px 2px rgb(146, 134, 30);
+    }
+
+    #Vayages-Block-Tittle {
+        font-style: italic;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+
+    #Body-portion {
+        width: 110%;
+        background-color: rgb(231, 231, 231);
+    }
+
+    #Dummy-text-Block {
+        text-align: center;
+        padding: 2em 2em;
+        background-color: black;
+        color: white;
+    }
+
+
+    #Dummy-text-heading-Block {
+        font-style: italic;
+        font-size: 2rem;
+    }
+
+    #Dummy-heading-peragraph-Block {
+        color: rgb(230, 227, 227);
+        font-size: 0.9rem;
+        padding: 10px 10px;
+        text-align: justify;
+        font-family: monospace;
+    }
+
+    #Dummy-text-div {
+        text-align: center;
+        padding: 1em 5em;
+    }
+
+    #Dummytext-heading {
+        font-style: italic;
+        font-size: 2rem;
+    }
+
+    #Dummy-heading-peragraph {
+        color: gray;
+        font-size: 1rem;
+        padding: 10px 0px;
+        text-align: justify;
+        font-family: monospace;
+    }
+
+
+    #image-section {
+        padding: 0.5em 0.3em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1.5fr);
+    }
+
+
+    .image-section {
+        width: 95%;
+        box-shadow: 2px 2px 20px 2px rgb(17, 17, 17);
+    }
+
+    .image-section:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    .Image-Title {
+        position: relative;
+        top: -3.4em;
+        color: white;
+        width: 90%;
+        opacity: 1;
+        font-size: 11px;
+    }
+
+    .Image-Title:hover {
+        background-color: black;
+        opacity: 0.3;
+    }
+
+    footer {
+        width: 110%;
+        background-color: black;
+    }
+
+    #Above-footer-block {
+        padding: 2em 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: black;
+        width: 100%;
+        margin-top: 2em;
+        color: white;
+    }
+
+
+    #Above-footer-block-image {
+        text-align: center;
+    }
+
+    #woorking-person-image {
+        border-radius: 50%;
+        width: 32%;
+        box-shadow: 2px 2px 20px 2px whitesmoke;
+    }
+
+    #Above-footer-block-peragraph {
+        display: inline;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    #Below-footer-block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem 3em;
+        background-color: rgb(41, 41, 41);
+        color: whitesmoke;
+        padding: 5em 0em;
+    }
+
+
+    #Social-Details {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        grid-row-gap: 1em;
+        text-align: center;
+    }
+
+    #Travling-logo {
+        border-radius: 50%;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1em;
+        color: whitesmoke;
+    }
+
+    .Footer-Heading-Color {
+        color: rgba(211, 31, 31, 0.877);
+        font-weight: bold;
+        font-size: 1em;
+        margin: 1em 0em;
+    }
+
+    i {
+        color: white;
+        box-shadow: 2px 2px 10px 2px red;
+    }
+
+    .fa-facebook-square:hover {
+        background-color: rgb(33, 112, 165);
+        transform: scale(1.2);
+    }
+
+    .fa-instagram:hover {
+        background-color: rgb(206, 209, 27);
+        border-radius: 50%;
+        transform: scale(1.2);
+    }
+
+    .fa-twitter-square:hover {
+        background-color: rgb(70, 182, 48);
+        transform: scale(1.2);
+    }
+
+    li {
+        padding: 0.3em 0em;
+        list-style: none;
+        color: white;
+        
+    }
+
+    #Copy-Right {
+        color: white;
+        text-align: center;
+    }
+
+
+    button {
+        margin-top: 0.5em;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 2px yellow;
+    }
+
+    button:hover {
+        background-color: rgb(218, 23, 23);
+    }
+
+    .lux {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        margin: 20px 50px;
+    }
+
+    .conv {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cont {
+        background-color: aquamarine;
+        width: 50vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+
+    .bt {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(34, 34, 34);
+        cursor: pointer;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+
+    .flex-cont {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 1s ease;
+    }
+
+    .leftbtn {
+
+        color: rgb(247, 242, 242);
+        font-size: 2em;
+        left: 20px;
+    }
+
+    .rightbtn {
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+        right: 20px;
+    }
+
+    .divimg {
+
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+
+}
+
+
+@media screen and (min-width:600px) and (max-width:911px) {
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+    .canvas {
+        background-color: rgb(16, 16, 82);
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .second-canvas {
+        width: 100%;
+        background-color: rgb(16, 16, 82);
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    .container {
+        width: 100vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+    .second-container {
+        width: 50vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+
+    .btn {
+        position: absolute;
+        top: 30%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(197, 197, 197);
+        cursor: pointer;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+
+    .second-btn {
+        position: absolute;
+        top: 550px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(179, 179, 179);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 2s ease;
+    }
+   
+
+
+
+    .second-flex-container {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 2s ease;
+    }
+
+    .left-btn {
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+        left: 10px;
+    }
+
+    .second-left-btn {
+        font-weight: bolder;
+        color: rgb(250, 248, 248);
+        font-size: 2em;
+        left: 5px;
+    }
+
+    .second-right-btn {
+        font-weight: bolder;
+        color: whitesmoke;
+        font-size: 2em;
+        right: -60px;
+    }
+
+    .right-btn {
+        color: whitesmoke;
+        font-size: 2em;
+        right: 20px;
+    }
+
+
+    .div-img{
+        width: 100vw;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .second-div-img {
+        display: flex;
+        padding: 0px 10px;
+        width: 79%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        transform: rotate3d(1, 1, 1, 20deg);
+        box-shadow: 2px 2px 20px 2px;
+    }
+
+    .lux {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lux-pera {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2em;
+        color: gray;
+    }
+
+    #Navbar-item {
+        top: 10px;
+        position: absolute;
+        display: flex;
+    }
+
+    .Navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+
+    ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 15px;
+        color: rgb(58, 57, 57);
+        padding: 0px 10px;
+    }
+
+    ul li a:hover {
+        background-color: white;
+        color: black;
+        padding: 2px 2px;
+        border-radius: 10px;
+    }
+
+    #Travling-logo-navbar {
+        border-radius: 50%;
+        width: 25%;
+        box-shadow: 2px 2px 20px 2px rgb(146, 134, 30);
+    }
+
+    #Vayages-Block-Tittle {
+        font-style: italic;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+
+    #Body-portion {
+        width: 100vw;
+        background-color: rgb(231, 231, 231);
+    }
+
+    #Dummy-text-Block {
+        width: 88%;
+        text-align: center;
+        padding: 2em 2em;
+        background-color: black;
+        color: white;
+    }
+
+
+    #Dummy-text-heading-Block {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    #Dummy-heading-peragraph-Block {
+        color: rgb(230, 227, 227);
+        font-size: 0.7rem;
+        padding: 10px 10px;
+        text-align: justify;
+        font-family: monospace;
+        letter-spacing: 1px;
+    }
+
+    #Dummy-text-div {
+        text-align: center;
+        padding: 1em 5em;
+    }
+
+    #Dummytext-heading {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    #Dummy-heading-peragraph {
+        color: gray;
+        font-size: 0.7rem;
+        padding: 10px 10px;
+        text-align: justify;
+        font-family: 'Times New Roman';
+        letter-spacing: 1px;
+    }
+
+
+    #image-section {
+        padding: 0.5em 0.3em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1.5fr);
+    }
+
+
+    .image-section {
+        width: 95%;
+        box-shadow: 2px 2px 20px 2px rgb(17, 17, 17);
+    }
+
+    .image-section:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    .Image-Title {
+        position: relative;
+        top: -3.4em;
+        color: white;
+        width: 90%;
+        opacity: 1;
+        font-size: 11px;
+    }
+
+    .Image-Title:hover {
+        background-color: black;
+        opacity: 0.3;
+    }
+
+    footer {
+        width: 110%;
+        background-color: black;
+    }
+
+    #Above-footer-block {
+        padding: 2em 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: black;
+        width: 100%;
+        margin-top: 2em;
+        color: white;
+    }
+
+
+    #Above-footer-block-image {
+        text-align: center;
+    }
+
+    #woorking-person-image {
+        border-radius: 50%;
+        width: 32%;
+        box-shadow: 2px 2px 20px 2px whitesmoke;
+    }
+
+    #Above-footer-block-peragraph {
+        display: inline;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    #Below-footer-block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem 3em;
+        background-color: rgb(41, 41, 41);
+        color: whitesmoke;
+        padding: 5em 0em;
+    }
+
+
+    #Social-Details {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        grid-row-gap: 1em;
+        text-align: center;
+    }
+
+    #Travling-logo {
+        border-radius: 50%;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1em;
+        color: whitesmoke;
+    }
+
+    .Footer-Heading-Color {
+        color: rgba(211, 31, 31, 0.877);
+        font-weight: bold;
+        font-size: 1em;
+        margin: 1em 0em;
+    }
+
+    i {
+        color: white;
+        box-shadow: 2px 2px 10px 2px red;
+    }
+
+    .fa-facebook-square:hover {
+        background-color: rgb(33, 112, 165);
+        transform: scale(1.2);
+    }
+
+    .fa-instagram:hover {
+        background-color: rgb(206, 209, 27);
+        border-radius: 50%;
+        transform: scale(1.2);
+    }
+
+    .fa-twitter-square:hover {
+        background-color: rgb(70, 182, 48);
+        transform: scale(1.2);
+    }
+
+    li {
+        padding: 0.3em 0em;
+        list-style: none;
+        color: white;
+        
+    }
+
+    #Copy-Right {
+        color: white;
+        text-align: center;
+    }
+
+
+    button {
+        margin-top: 0.5em;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 2px yellow;
+    }
+
+    button:hover {
+        background-color: rgb(218, 23, 23);
+    }
+
+    .lux {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        margin: 20px 50px;
+    }
+
+    .conv {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cont {
+        background-color: aquamarine;
+        width: 50vw;
+        aspect-ratio: 16/9;
+        background-color: whitesmoke;
+        overflow: hidden;
+    }
+
+
+    .bt {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(34, 34, 34);
+        cursor: pointer;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        z-index: 1;
+    }
+
+
+    .flex-cont {
+        display: flex;
+        height: 100%;
+        width: 100vw;
+        transition: 1s ease;
+    }
+
+    .leftbtn {
+
+        color: rgb(247, 242, 242);
+        font-size: 2em;
+        left: 20px;
+    }
+
+    .rightbtn {
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+        right: 20px;
+    }
+
+    .divimg {
+
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+
+}
+
+
+
+
+
+
